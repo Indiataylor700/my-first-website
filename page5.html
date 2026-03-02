@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <!-- Horizontal Navigation -->
+  <div class="nav">
+    <ul class="nav-h">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="page2.html">Page 2</a></li>
+        <li><a href="page3.html">Page 3</a></li>
+        <li><a href="page4.html">Page 4</a></li>
+        <li><a href="#" class="active">Page 5</a></li>
+    </ul>
+  </div>
+
+    <!-- Form Elements -->
+     <form class="my-form" onsubmit="myInfo()">
+        <!-- Person Entry Section -->
+         <div class="person">
+            <label for="fname">First Name:</label> <br>
+            <input type="text" id="fname" name="fname" onchange="changeEvent()"/> <br>
+            <br>
+            <label for="faddress">Address:</label> <br>
+            <input type="text" id="faddress" name="faddress" onblur="blurEvent()"/> <br>
+            <br>
+            <label for="pw">Password</label> <br>
+            <input type="password" name="pw" id="pw"/> <br>
+            <br>
+         </div>
+
+         <!-- Radio Button for Movie Genres -->
+          <div class="movie-choice">
+            <input type="radio" id="a" name="movie" value="action"/>
+            <label for="a">Action</label> <br>
+             <input type="radio" id="c" name="movie" value="comedy"/>
+            <label for="c">Comedy</label> <br>
+             <input type="radio" id="d" name="movie" value="drama"/>
+            <label for="d">Drama</label> <br>
+             <input type="radio" id="s" name="movie" value="scifi"/>
+            <label for="s">Sci-fi</label> <br>
+             <input type="radio" id="r" name="movie" value="romance"/>
+            <label for="r">Romance</label> <br>
+             <input type="radio" id="t" name="movie" value="thriller"/>
+            <label for="t">Thriller</label> <br>
+        </div>
+        <br><br>
+       <!--   <input type="button" name="submit" value="Submit" onclick="myInfo()">-->
+          <button type="submit">Submit</button>
+        <br><br>
+        <!-- Output Result -->
+         <div class="result">
+        <p id="my-name"></p>
+        <p id="movie-choice"></p>
+         </div>
+
+    </form>
+
+    <script src="scripts/script.js"/>
+
+</body>
+</html>
